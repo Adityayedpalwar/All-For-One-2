@@ -9,3 +9,6 @@ function filterSelection(category){
         }
     });
 }
+function toggleSound(video){
+    video.muted = !video.muted;
+}
