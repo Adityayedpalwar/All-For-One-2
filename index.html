@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cinematic Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">ADI</div>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#portfolio">Work</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="about">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1>Visual Storyteller</h1>
+        <p>Editing • Motion • Design</p>
+        <a href="#portfolio" class="btn">Explore Work</a>
+    </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="portfolio" id="portfolio">
+
+    <div class="filter-buttons">
+        <button onclick="filterSelection('all')">All</button>
+        <button onclick="filterSelection('photography')">Photography</button>
+        <button onclick="filterSelection('posters')">Posters</button>
+        <button onclick="filterSelection('edits')">Edits</button>
+    </div>
+
+    <div class="grid">
+
+        <div class="card photography">
+            <img src="img1.png">
+            <div class="overlay-text">Photography</div>
+        </div>
+
+        <div class="card posters">
+            <img src="p0.png">
+            <div class="overlay-text">Posters</div>
+        </div>
+
+        <div class="card edits">
+            <video src="V1.mp4" muted autoplay loop></video>
+            <div class="overlay-text">Edits</div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
